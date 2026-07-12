@@ -33,6 +33,37 @@ Credentials:
 Username: admin
 Password: 123
 
+
+##  Phase 2 – Flask Templates & Frontend Integration
+
+### 📚 Topics Covered
+
+#### 📝 Jinja2 Templating
+- Render dynamic HTML using `render_template()`
+- Pass variables from Flask to HTML templates
+- Use Jinja2 syntax:
+  - `{{ }}` for variables
+  - `{% %}` for control statements (loops, conditions, blocks)
+
+#### 🏗️ Template Inheritance
+- Create a reusable `base.html` layout
+- Extend base templates using `{% extends %}`
+- Define and override sections with `{% block %}`
+- Reduce code duplication across multiple pages
+
+#### 🌐 HTML Integration
+- Organize HTML files inside the `templates/` directory
+- Create multiple web pages
+- Connect pages using Flask routes
+
+#### 🎨 CSS Integration
+- Serve static files from the `static/` directory
+- Link CSS using:
+  ```html
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  ```
+- Apply custom styling to Flask web pages
+
 ## 🛠 Tech Stack
 
 - Python
@@ -44,7 +75,6 @@ This repository is intended to track my Flask learning progress from beginner to
 
 Future topics include:
 
-- Templates (Jinja2)
 - Bootstrap Integration
 - SQLite Database
 - User Registration
@@ -54,4 +84,4 @@ Future topics include:
 
 ---
 
-⭐ This repository will be updated regularly as I continue learning Flask.
+ This repository will be updated regularly as I continue learning Flask.
