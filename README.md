@@ -34,7 +34,7 @@ Username: admin
 Password: 123
 
 
-##  Phase 2 – Flask Templates & Frontend Integration
+##  Phase 2 – Flask Templates & Frontend Integration (login_1.1)
 
 ### 📚 Topics Covered
 
