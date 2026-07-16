@@ -7,7 +7,7 @@ This repository documents my journey of learning **Flask**, one concept at a tim
 
 I'm currently exploring backend development alongside Machine Learning to strengthen my full-stack development skills.
 
-## 📚 Topics Covered
+## Topics Covered
 
 - ✅ Flask Installation
 - ✅ Routing
@@ -17,7 +17,7 @@ I'm currently exploring backend development alongside Machine Learning to streng
 - ✅ Sessions
 - ✅ Login Authentication (Basic)
 
-## 📂 Current Project
+## Current Project
 
 ### Basic Login System
 
@@ -36,33 +36,71 @@ Password: 123
 
 ##  Phase 2 – Flask Templates & Frontend Integration (login_1.1)
 
-### 📚 Topics Covered
+###  Topics Covered
 
-#### 📝 Jinja2 Templating
+####  Jinja2 Templating
 - Render dynamic HTML using `render_template()`
 - Pass variables from Flask to HTML templates
 - Use Jinja2 syntax:
   - `{{ }}` for variables
   - `{% %}` for control statements (loops, conditions, blocks)
 
-#### 🏗️ Template Inheritance
+####  Template Inheritance
 - Create a reusable `base.html` layout
 - Extend base templates using `{% extends %}`
 - Define and override sections with `{% block %}`
 - Reduce code duplication across multiple pages
 
-#### 🌐 HTML Integration
+####  HTML Integration
 - Organize HTML files inside the `templates/` directory
 - Create multiple web pages
 - Connect pages using Flask routes
 
-#### 🎨 CSS Integration
+####  CSS Integration
 - Serve static files from the `static/` directory
 - Link CSS using:
   ```html
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   ```
 - Apply custom styling to Flask web pages
+
+## Phase 3 – Feedback Form using Flask
+
+###  Overview
+A simple Flask application that collects user feedback through an HTML form and displays a personalized thank-you page using Jinja2 templates.
+
+##  Concepts Learned
+- Flask Routing
+- GET & POST Requests
+- HTML Forms
+- `request.form.get()`
+- `render_template()`
+- Passing data from Flask to HTML
+- Jinja2 Template Inheritance (`extends`, `block`)
+
+##  Project Structure
+```
+feedback/
+│── main.py
+└── templates/
+    ├── base.html
+    ├── feedback.html
+    └── thanku.html
+```
+
+## ▶️ Run the Project
+```bash
+pip install flask
+python main.py
+```
+
+Open: `http://127.0.0.1:5000/feedback`
+
+## ✨ Features
+- User feedback form
+- Handles GET and POST requests
+- Personalized thank-you page
+- Reusable base template using Jinja2
 
 ## 🛠 Tech Stack
 
